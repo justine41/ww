@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinnWeb</title>
+            
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MyWebsite</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <script>
+        const toggleBtn = document.getElementById("darkMode-icon");
+        toggleBtn.addEventListener("click", () => {
+          document.body.classList.toggle("dark-mode");
+        });
+      </script>
+      
+    
+
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+    <section class="home" id="home">
+     <div class="home-content">
+        <h3>Hallo, saya</h3>
+        <h1 class="typing">Justine</h1>
+        <p>ini web hasil dari codingan saya sendiri, <br> web ini dibuat untuk belajar
+
+     <div class="social-media">
+        <a href="https://www.instagram.com/tinn_smb"><i class='bx bxl-instagram-alt' ></i></a>
+        <a href="https://www.tiktok.com/@capriconz2?_t=ZS-8vnXJz09i47&_r=1"><i class='bx bxl-tiktok' ></i></a>
+    </div>
+ </div>
+
+ <div class="home-img">
+    <img src="main.png" alt="gojo">
+ </div>
+
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="about.png" alt="gojo">
+
+            <div class="about-content">
+                <ul>
+                    <li><span class="label">Nama</span>:Justine</li>
+                    <li><span class="label">Umur</span>:15 tahun</li>
+                    <li><span class="label">Sekolah</span>:SMPS Budi Murni 2</li>
+                    <li><span class="label">Kelas</span>:92</li>
+                    <li><span class="label">Hoby</span>:Basket</li>
+                    <li><span class="label">Cita-cita</span>:Cyber Security</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+
+   <section class="contact" id="contact">
+<div class="kontak-container">
+  <h2>Kontak Saya</h2>
+  <p><strong>Nomor HP:</strong> 0822-1394-8741</p>
+  <p><strong>Email:</strong> adejustine32@gmail.com</p>
+</div>
+  </section>
+    <script src="script.js"></script>
+    <div class="up">
+    <a href="#home"><i class='bx bx-up-arrow-circle'></i></i></a>
+    </div>
+    <footer style="text-align: center; padding: 10px; background-color: #f2f2f2;">
+  &copy; 2025 Justine. All rights reserved.
+  
+</footer>
+
+</body>
+</html>
